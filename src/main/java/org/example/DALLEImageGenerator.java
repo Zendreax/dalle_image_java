@@ -16,7 +16,7 @@ public class DALLEImageGenerator {
     OkHttpClient client = new OkHttpClient.Builder().build();
 
     public void generateImage(String prompt) throws IOException {
-        String apiKey = "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";
+        String apiKey = "APIKEY";
         String url = "https://api.openai.com/v1/images/generations";
 
         String json = "{\"model\":\"image-alpha-001\",\"prompt\":\"" + prompt + "\",\"num_images\":1,\"size\":\"1024x1024\",\"response_format\":\"url\"}";
